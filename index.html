@@ -1,40 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodieland</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="flex-row">
-        <div>
-            <img src="images/Foodieland..svg" alt="">
-        </div>
-        <div>
-            <ul class="flex-row">
-                <li><a href="">Home</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About us</a></li>
-            </ul>
-        </div>
-        <div>
-            <a href=""><img src="images/001-facebook.svg" alt=""></a>
-            <a href=""><img src="images/003-twitter.svg" alt=""></a>
-            <a href=""><img src="images/004-instagram.svg" alt=""></a>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="flex-row-header">
+      <div>
+        <img src="images/Foodieland..svg" alt="" />
+      </div>
+      <div>
+        <ul class="navigation">
+          <li><a href="">Home</a></li>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a href=""
+          ><img src="images/001-facebook.svg" alt="" class="social-icon"
+        /></a>
+        <a href=""
+          ><img src="images/003-twitter.svg" alt="" class="social-icon"
+        /></a>
+        <a href=""
+          ><img src="images/004-instagram.svg" alt="" class="social-icon"
+        /></a>
+      </div>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
+      <section>
+        <div class="section-1">Contact us</div>
 
+        <div class="div-img-inputs">
+          <div>
+            <img src="images/Group 13936.png" alt="" />
+          </div>
+          <!-- inputs -->
+          <div class="input-box" style="width: 820px">
+            <!-- input row 1 -->
+            <div>
+              <div class="div-label">
+                <label for="name">name</label>
+                <label for="email-address">emAIL aDDRESS</label>
+              </div>
+              <div class="div-inputs">
+                <input
+                  type="text"
+                  placeholder="Enter your name..."
+                  name="name"
+                  id="name"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your email address..."
+                  name="email-address"
+                  id="email-address"
+                  required
+                />
+              </div>
+            </div>
+            <!-- input row 2 -->
+            <div>
+              <div class="div-label">
+                <label for="Subject">Subject</label>
+                <label for="ENquiry-type">ENquiry type</label>
+              </div>
+              <div class="div-inputs">
+                <input
+                  type="text"
+                  placeholder="Enter subject..."
+                  name="Subject"
+                  id="Subject"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Advertising"
+                  list="list"
+                  name="ENquiry-type"
+                  id="ENquiry-type"
+                  required
+                />
+                <datalist id="list">
+                  <option value="Advertising 1"></option>
+                  <option value="Advertising 2"></option>
+                  <option value="Advertising 3"></option>
+                  <option value="Advertising 4"></option>
+                  <option value="Advertising 5"></option>
+                </datalist>
+              </div>
+            </div>
+            <!-- input row 3 -->
+            <div>
+              <div class="div-label">
+                <label for="message">message</label>
+              </div>
+              <div class="div-inputs">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Enter your messages..."
+                  style="min-height: 200px"
+                ></textarea>
+              </div>
+            </div>
+            <div>
+              <input id="submit" type="submit" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section-2">
+          <div>
+            <img
+              src="images/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"
+              alt=""
+              style="border-bottom-left-radius: 60px; width: 100%; height: 100%"
+            />
+          </div>
+          <div class="section-2-details">
+            <h2>Deliciousness to your inbox</h2>
+            <p id="para-section-2">
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
+            </p>
+            <div id="input-section-2">
+              <div>
+                <input
+                  id="email-section-2"
+                  type="email"
+                  placeholder="Your email address..."
+                />
+              </div>
+              <div>
+                <input id="subscribe" type="submit" value="Subscribe" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              id="salad"
+              src="images/Photo.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-3"><h3>Check out the delicious recipe</h3></div>
+
+        <div class="item-rows">
+          <!-- row 1 -->
+          <div style="padding-bottom: 20px;">
+            <div class="picture-food">
+              <img src="images/Mask Group.png" alt="" />
+              <div class="icon-favorite">
+                <img
+                  src="images/Group 852.svg"
+                  alt=""
+                  class="sub-ison-favorite"
+                />
+              </div>
+            </div>
+            <div class="picture-caption">
+              Mixed Tropical Fruit Salad with Superfood Boosts
+            </div>
+            <div class="icon-bar">
+              <div>
+                <img src="images/Timer.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">30 Minutes</div>
+              <div>
+                <img src="images/ForkKnife.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">Healthy</div>
+            </div>
+          </div>
+          <!-- row 2 -->
+          <div style="padding-bottom: 20px;">
+            <div class="picture-food">
+              <img src="images/Mask Group (1).png" alt="" />
+              <div class="icon-favorite">
+                <img
+                  src="images/Group 852 (1).svg"
+                  alt=""
+                  class="sub-ison-favorite"
+                />
+              </div>
+            </div>
+            <div class="picture-caption">
+              Big and Juicy Wagyu Beef Cheeseburger
+            </div>
+            <div class="icon-bar">
+              <div>
+                <img src="images/Timer.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">30 Minutes</div>
+              <div>
+                <img src="images/ForkKnife.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">Western</div>
+            </div>
+          </div>
+          <!-- row 3 -->
+          <div style="padding-bottom: 20px;">
+            <div class="picture-food">
+              <img src="images/Mask Group (2).png" alt="" />
+              <div class="icon-favorite">
+                <img
+                  src="images/Group 852.svg"
+                  alt=""
+                  class="sub-ison-favorite"
+                />
+              </div>
+            </div>
+            <div class="picture-caption">
+              Healthy Japanese Fried Rice with Asparagus
+            </div>
+            <div class="icon-bar">
+              <div>
+                <img src="images/Timer.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">30 Minutes</div>
+              <div>
+                <img src="images/ForkKnife.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">Healthy</div>
+            </div>
+          </div>
+          <!-- row 4 -->
+          <div style="padding-bottom: 20px;">
+            <div class="picture-food">
+              <img src="images/Mask Group (3).png" alt="" />
+              <div class="icon-favorite">
+                <img
+                  src="images/Group 852 (1).svg"
+                  alt=""
+                  class="sub-ison-favorite"
+                />
+              </div>
+            </div>
+            <div class="picture-caption">
+              Cauliflower Walnut Vegetarian Taco Meat
+            </div>
+            <div class="icon-bar">
+              <div>
+                <img src="images/Timer.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">30 Minutes</div>
+              <div>
+                <img src="images/ForkKnife.svg" alt="" />
+              </div>
+              <div class="caption-icon-bar">Eastern</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
+      <div class="footer-1">
+        <div class="footer-1-left">
+          <div>
+            <div><img src="images/Foodieland..svg" alt="" /></div>
+            <div class="footer-1-left-text">
+              Lorem ipsum dolor sit amet, consectetuipisicing elit,
+            </div>
+          </div>
+        </div>
+        <div class="footer-1-right">
+          <ul>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="footer-2">
+        <div class="footer-2-center">
+          © 2020 Flowbase. Powered by <span>Webflow</span>
+        </div>
+        <div>
+          <a href=""
+            ><img src="images/001-facebook.svg" alt="" class="social-icon"
+          /></a>
+          <a href=""
+            ><img src="images/003-twitter.svg" alt="" class="social-icon"
+          /></a>
+          <a href=""
+            ><img src="images/004-instagram.svg" alt="" class="social-icon"
+          /></a>
+        </div>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
